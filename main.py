@@ -14,5 +14,5 @@ medal_counts = df[df['Extra'] != 'None']['Extra'].value_counts()
 medal_counts.plot(kind='pie', autopct='%1.1f%%', title='Extracurricular')
 plt.ylabel('')  # Removes default y-axis label
 plt.tight_layout()
-plt.savefig("medal_pie_chart.png")
+plt.savefig("extracurricular.png")
 plt.show()
