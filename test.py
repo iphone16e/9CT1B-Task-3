@@ -9,10 +9,10 @@ print(df.head())
 
 # Show the column names
 print(df.columns)
-medal_counts = df[df['Job'] != 'None']['Job'].value_counts()
+medal_counts = df[df['Department'] != 'None']['Department'].value_counts()
 
-medal_counts.plot(kind='pie', autopct='%1.1f%%', title='Job')
+medal_counts.plot(kind='pie', autopct='%1.1f%%', title='Department')
 plt.ylabel('')  # Removes default y-axis label
 plt.tight_layout()
-plt.savefig("Job.png")
+plt.savefig("Department.png")
 plt.show()
