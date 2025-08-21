@@ -30,7 +30,7 @@ if choice == 1:
 elif choice == 2:
     extra_pie = df[df['Extra'] != 'None']['Extra'].value_counts()
     extra_pie.plot(kind='pie', autopct='%1.1f%%', title='Extra-curricular attendance')
-    plt.ylabel('')  # Removes default y-axis label
+    plt.ylabel('')  
     plt.tight_layout()
     plt.savefig("Extracurricular_attendance_piechart.png")
     plt.show()
@@ -53,7 +53,6 @@ elif choice == 4:
     plt.savefig("extra_bar.png")
     plt.show()
 elif choice == 5:
-    # Replace these with actual column names from your dataset
     group_col = 'Department'       # Grouping variable
     extra_col = 'Extra'             # Extracurricular participation
     job_col = 'Job'                 # Employment status
